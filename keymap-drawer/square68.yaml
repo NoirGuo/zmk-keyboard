@@ -1,10 +1,11 @@
+layout: {zmk_keyboard: square68}
 layers:
   QWERT:
-  - Ctl+ A
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
-  - Ctl+Sft+ V
+  - Ctl+A
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Sft+V
   - {t: '`', s: '~'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '-', s: _}
