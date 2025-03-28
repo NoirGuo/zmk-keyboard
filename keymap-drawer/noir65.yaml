@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: noir65}
 layers:
   QWERT:
   - $$mdi:keyboard-esc$$
