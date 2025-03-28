@@ -1,4 +1,3 @@
-layout: {zmk_keyboard: square68}
 layers:
   QWERT:
   - Ctl+X

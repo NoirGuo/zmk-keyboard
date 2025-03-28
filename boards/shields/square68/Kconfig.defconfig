@@ -1,5 +1,5 @@
 
-if SHIELD_SQUARE68_LEFT
+if SHIELD_SQUARE68_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Square68"
