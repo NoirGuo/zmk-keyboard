@@ -1,8 +1,9 @@
+layout: {zmk_keyboard: ky89}
 layers:
-  qwerty: [ESCAPE, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, '', DEL, '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, PG UP, MUTE,
-    TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PG DN, Ctl+ X, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, HOME, Ctl+ C, LSHIFT, Z, X, C, V, B, N, M, ',',
-    ., /, RSHIFT, UP, END, Ctl+ V, control, LCTRL, LGUI, LALT, SPACE, SPACE, RALT, RCTRL, control, LEFT, DOWN, RIGHT]
-  control:
+  Qwerty: [ESCAPE, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, '', DEL, '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', BSPC, PG UP, MUTE,
+    TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ']', \, PG DN, Ctl+X, CAPS, A, S, D, F, G, H, J, K, L, ;, '''', ENTER, HOME, Ctl+C, LSHIFT, Z, X, C, V, B, N, M, ',',
+    ., /, RSHIFT, UP, END, Ctl+V, Control, LCTRL, LGUI, LALT, SPACE, SPACE, RALT, RCTRL, Control, LEFT, DOWN, RIGHT]
+  Control:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
