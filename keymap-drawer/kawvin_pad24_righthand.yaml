@@ -1,0 +1,68 @@
+layout: {zmk_keyboard: kawvin_pad24_righthand}
+layers:
+  NUMBER:
+  - {t: ESC, h: MOVE}
+  - BACKSPACE
+  - DEL
+  - {t: KP EQUAL, h: contrl}
+  - TAB
+  - KP SLASH
+  - KP MULTIPLY
+  - KP MINUS
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - KP 0
+  - KP DOT
+  MOVE:
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP NUM
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - {t: ▽, type: trans}
+  - RIGHT
+  - {t: ▽, type: trans}
+  - DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  contrl:
+  - RGB TOG
+  - RGB SPI
+  - RGB SPD
+  - {type: held}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB EFF
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - '&bootloader'
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - '&studio_unlock'
+  - BT CLR
+  - BT CLR ALL

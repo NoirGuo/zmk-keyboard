@@ -1,0 +1,9 @@
+file_format: "1"
+id: kawvin_pad24_righthand
+name: kawvin_pad24
+type: shield
+url: https://github.com/NoirGuo/zmk-pad24
+requires: [nice_nano_v2]
+features:
+  - keys
+  - underglow

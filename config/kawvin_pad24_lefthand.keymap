@@ -1,0 +1,151 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/*
+&led_strip {
+    chain-length = <24>;
+    // chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
+    // chain-length = <29>; // Uncomment if using only per-key LEDs.
+};
+*/
+
+#define DEFAULT 0
+#define NUMLEFT 1
+#define FUNRIGHT 2
+#define FUNLEFT 3
+#define FUN 4
+#define LSWITCH 5
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+//  ---------------------------------------------------------------------------------
+//	|=    |BSPC|TAB |ESC     |
+//	|-    |*   |/   |Num_Lock|
+//	|+    |9   |8   |7       |
+//	|     |6   |5   |4       |
+//	|ENTER|3   |2   |1       |
+//	|     |.   |    |0       |
+
+
+                        bindings = <
+&kp EQUAL     &kp BSPC         &kp TAB       &kp ESC      
+&kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_NLCK  
+&kp KP_PLUS   &kp KP_N9        &kp KP_N8     &kp KP_N7    
+              &kp KP_N6        &kp KP_N5     &kp KP_N4    
+&kp KP_ENTER  &kp KP_N3        &kp KP_N2     &kp KP_N1    
+              &lt 5 KP_DOT                   &lt 2 KP_N0  
+
+
+                                >;
+                        };
+
+                numleft_layer {
+//  ---------------------------------------------------------------------------------
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+
+                        bindings = <
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans          &trans  
+
+                                >;
+                        };
+
+                funright_layer {
+//  ---------------------------------------------------------------------------------
+//  |&bootloader|    |    |    |
+//  |           |    |    |    |
+//  |           |    |    |    |
+//  |           |    |    |    |
+//  |           |    |    |    |
+//  |           |    |    |    |
+
+                        bindings = <
+&bootloader  &trans  &trans  &trans  
+&trans       &trans  &trans  &trans  
+&trans       &trans  &trans  &trans  
+             &trans  &trans  &trans  
+&trans       &trans  &trans  &trans  
+             &trans          &trans  
+                                >;
+                        };
+
+                funleft_layer {
+//  ---------------------------------------------------------------------------------
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+
+                        bindings = <
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans          &trans  
+
+                                >;
+                        };
+
+                fun_layer {
+//  ---------------------------------------------------------------------------------
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+
+                        bindings = <
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans          &trans  
+
+                                >;
+                        };
+                
+                lswitch_layer {
+//  ---------------------------------------------------------------------------------
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+//  |    |    |    |    |
+
+                        bindings = <
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  
+        &trans          &trans  
+
+                                >;
+                };
+        };
+};

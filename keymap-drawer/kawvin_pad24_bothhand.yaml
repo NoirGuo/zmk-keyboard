@@ -1,0 +1,152 @@
+layout: {zmk_keyboard: kawvin_pad24_bothhand}
+layers:
+  default:
+  - ESC
+  - TAB
+  - BSPC
+  - '='
+  - KP NLCK
+  - KP SLASH
+  - KP MULTIPLY
+  - KP MINUS
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - {t: KP 0, h: funright}
+  - {t: KP 0, h: funright}
+  - {t: KP DOT, h: lswitch}
+  - KP ENTER
+  numleft:
+  - '='
+  - BSPC
+  - TAB
+  - ESC
+  - KP MINUS
+  - KP MULTIPLY
+  - KP SLASH
+  - KP NLCK
+  - KP PLUS
+  - KP 9
+  - KP 8
+  - KP 7
+  - KP PLUS
+  - KP 6
+  - KP 5
+  - KP 4
+  - KP ENTER
+  - KP 3
+  - KP 2
+  - KP 1
+  - KP ENTER
+  - {t: KP DOT, h: lswitch}
+  - {t: KP 0, h: funleft}
+  - {t: KP 0, h: funleft}
+  funright:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - UP
+  - PG UP
+  - {t: ▽, type: trans}
+  - LEFT
+  - {t: ▽, type: trans}
+  - RIGHT
+  - {t: ▽, type: trans}
+  - END
+  - DOWN
+  - PG DN
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  funleft:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG UP
+  - UP
+  - HOME
+  - {t: ▽, type: trans}
+  - LEFT
+  - {t: ▽, type: trans}
+  - RIGHT
+  - {t: ▽, type: trans}
+  - PG DN
+  - DOWN
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  fun:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lswitch:
+  - '&soft_off'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
+  - {t: numleft, h: toggle}
+  - {t: funright, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
