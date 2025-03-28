@@ -1,10 +1,7 @@
 # Copyright (c) 2024 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_DISPLAY_091_DRUM
-    bool "Enable 0.91 Drum widget for dongle"
-
-if SHIELD_DISPLAY_091_DRUM
+if SHIELD_DISPLAY_130_CAT
 
 choice ZMK_DISPLAY_STATUS_SCREEN
     default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
@@ -19,16 +16,18 @@ config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     select LV_USE_LINE 
     select LV_FONT_UNSCII_8
     select ZMK_WPM
+    imply ZMK_HID_INDICATORS
+
+config ZMK_DONGLE_DISPLAY_DONGLE_BATTERY
+    bool "Show also the battery level of the dongle"
+    depends on BT && (!ZMK_SPLIT_BLE || ZMK_SPLIT_ROLE_CENTRAL)
+
+config ZMK_DONGLE_DISPLAY_MAC_MODIFIERS
+    bool "Use MacOS modifier symbols instead of the Windows symbols"
 
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
-
-#config CONFIG_ZMK_IS_DONGLE_MODE
-#    bool "Enable dongle or not"
-
-#config CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERIPHERAL
-#   default y
 
 config LV_Z_MEM_POOL_SIZE
     default 8192

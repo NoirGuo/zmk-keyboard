@@ -5,5 +5,3 @@ type: shield
 url: https://github.com/kawvin/zmk-config
 requires: 
   - i2c_oled
-features:
-  - display

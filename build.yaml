@@ -5,27 +5,48 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-# board: [ "nrfmicro_13" ]
-# shield: [ "square68_left", "square68_right" ]
+# board: [ "nice_nano_v2" ]
+# shield: [ "corne_left", "corne_right" ]
 # include:
-#   - board: nrfmicro_13
-#     shield: square68_left
-#   - board: nrfmicro_13
-#     shield: square68_right
+#   - board: bdn9_rev2
+#   - board: nice_nano_v2
+#     shield: reviung41
+#   - board: nice_nano_v2
+#     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-#     artifact-name: square68_left_with_logging
+#     artifact-name: corne_left_with_logging
 #
 ---
 include:
+
+# 一、【无dongle】，如果不使用display,在 left.conf 或 right.conf 进行关闭
+  # # 【方案11】  dongle：无，display：系统自带-横向  或  关闭
+  # - board: nice_nano_v2
+  #   shield: ky89_left
+  #   artifact-name: ky89_11_Left
+  #   # 带display使用
+  #   # artifact-name: ky89_11_LeftWithDefault
+  # - board: nice_nano_v2
+  #   shield: ky89_right
+  #   artifact-name: ky89_11_Right
+
+  # # 【方案12】  dongle：无，display：猫咪-横向(128*32)
+  # - board: nice_nano_v2
+  #   shield: ky89_left display_091_cat
+  #   artifact-name: ky89_12_LeftWithCat
+  # - board: nice_nano_v2
+  #   shield: ky89_right
+  #   artifact-name: ky89_12_Right
+  
+  # 【方案13】  dongle：无，display：敲鼓-竖向(128*32) By Kawvin
   - board: nice_nano_v2
-    shield: square68_left display_091_drum
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_leftwithdrum_studio
+    shield: ky89_left display_091_drum
+    artifact-name: ky89_13_LeftWithDrum
   - board: nice_nano_v2
-    shield: square68_right display_091_drum
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_rightwithdrum
+    shield: ky89_right
+    artifact-name: ky89_13_Right
+
+# # 四、【重置固件】 
   - board: nice_nano_v2
     shield: settings_reset
-    
+  #   artifact-name: ky89_重置固件
