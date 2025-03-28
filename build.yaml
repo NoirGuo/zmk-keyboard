@@ -5,27 +5,30 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-# board: [ "nrfmicro_13" ]
-# shield: [ "square68_left", "square68_right" ]
+# board: [ "nice_nano_v2" ]
+# shield: [ "corne_left", "corne_right" ]
 # include:
-#   - board: nrfmicro_13
-#     shield: square68_left
-#   - board: nrfmicro_13
-#     shield: square68_right
+#   - board: bdn9_rev2
+#   - board: nice_nano_v2
+#     shield: reviung41
+#   - board: nice_nano_v2
+#     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-#     artifact-name: square68_left_with_logging
+#     artifact-name: corne_left_with_logging
 #
 ---
 include:
+
+# kawvin63
   - board: nice_nano_v2
-    shield: square68_left display_091_drum
+    shield: kawvin_63 display_042
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_leftwithdrum_studio
-  - board: nice_nano_v2
-    shield: square68_right display_091_drum
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_rightwithdrum
+    cmake-args: -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    artifact-name: Noir63_With042
+
+
+
+# # 重置固件
   - board: nice_nano_v2
     shield: settings_reset
-    
+    artifact-name: settings_reset

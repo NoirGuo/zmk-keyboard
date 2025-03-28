@@ -1,8 +1,0 @@
-# Copyright (c) 2020 Noir Guo
-# SPDX-License-Identifier: MIT
-
-config SHIELD_SQUARE68_LEFT
-    def_bool $(shields_list_contains,square68_left)
-
-config SHIELD_SQUARE68_RIGHT
-    def_bool $(shields_list_contains,square68_right)
