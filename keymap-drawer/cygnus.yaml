@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: cygnus}
 layers:
   QWERT:
   - $$mdi:keyboard-esc$$
