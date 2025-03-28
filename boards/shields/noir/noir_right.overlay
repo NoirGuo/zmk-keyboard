@@ -1,0 +1,33 @@
+/*
+ * Copyright (c) 2020 Noir Guo
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "noir.dtsi"
+
+&default_transform {
+    col-offset = <9>;
+    row-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 17 GPIO_ACTIVE_HIGH>
+        , <&gpio0 31 GPIO_ACTIVE_HIGH>
+        , <&gpio0 29 GPIO_ACTIVE_HIGH>
+        , <&gpio0 2 GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio0 3 GPIO_ACTIVE_HIGH>
+        , <&gpio0 28 GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
+        ;
+    row-gpios
+        = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};

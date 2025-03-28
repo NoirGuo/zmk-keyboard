@@ -1,0 +1,135 @@
+{
+  "id": "Noir88rgb",
+  "name": "Noir88rgb",
+  "layouts": {
+    "default_layout": {
+      "name": "default_layout",
+      "layout": [
+        { "label": "MUTE", "row": 0, "col":  0, "x":             1, "y":    1 },
+        { "label": "ESC", "row": 0, "col":  1, "x":            5.5, "y":    1 },
+        { "label": "F1", "row": 0, "col":  2, "x":             7.5, "y":    1 },
+        { "label": "F2", "row": 0, "col":  3, "x":             8.5, "y":    1 },
+        { "label": "F3", "row": 0, "col":  4, "x":             9.5, "y":    1 },
+        { "label": "F4", "row": 0, "col":  5, "x":            10.5, "y":    1 },
+        { "label": "F5", "row": 0, "col":  6, "x":              12, "y":    1 },
+        { "label": "5", "row": 0, "col":  7, "x":             10.5, "y":  2.5 },
+        { "label": "6", "row": 0, "col":  8, "x":             11.5, "y":  2.5 },
+      
+        { "label": "NUM", "row": 1, "col":  0, "x":              1, "y":  2.5 },
+        { "label": "/", "row": 1, "col":  1, "x":                2, "y":  2.5 },
+        { "label": "*", "row": 1, "col":  2, "x":                3, "y":  2.5 },
+        { "label": "-", "row": 1, "col":  3, "x":                4, "y":  2.5 },
+        { "label": "`", "row": 1, "col":  4, "x":              5.5, "y":  2.5 },
+        { "label": "1", "row": 1, "col":  5, "x":              6.5, "y":  2.5 },
+        { "label": "2", "row": 1, "col":  6, "x":              7.5, "y":  2.5 },
+        { "label": "3", "row": 1, "col":  7, "x":              8.5, "y":  2.5 },
+        { "label": "4", "row": 1, "col":  8, "x":              9.5, "y":  2.5 },
+      
+        { "label": "7", "row": 2, "col":  0, "x":               1, "y":   3.5 },
+        { "label": "8", "row": 2, "col":  1, "x":               2, "y":   3.5 },
+        { "label": "9", "row": 2, "col":  2, "x":               3, "y":   3.5 },
+        { "label": "TAB", "row": 2, "col":  3, "x":           5.5, "y":   3.5,"u":  1.5 },
+        { "label": "Q", "row": 2, "col":  4, "x":               7, "y":   3.5 },
+        { "label": "W", "row": 2, "col":  5, "x":               8, "y":   3.5 },
+        { "label": "E", "row": 2, "col":  6, "x":               9, "y":   3.5 },
+        { "label": "R", "row": 2, "col":  7, "x":              10, "y":   3.5 },
+        { "label": "T", "row": 2, "col":  8, "x":              11, "y":   3.5 },
+      
+        { "label": "4", "row": 3, "col":  0, "x":               1, "y":   4.5 },
+        { "label": "5", "row": 3, "col":  1, "x":               2, "y":   4.5 },
+        { "label": "6", "row": 3, "col":  2, "x":               3, "y":   4.5 },
+        { "label": "+", "row": 3, "col":  3, "x":               5, "y":   3.5, "r":   90, "rx":    5, "ry":   3.5,  "u":   2 },
+        { "label": "CAPS", "row": 3, "col":  4, "x":          5.5, "y":   4.5,"u": 1.75 },
+        { "label": "A", "row": 3, "col":  5, "x":            7.25, "y":   4.5 },
+        { "label": "S", "row": 3, "col":  6, "x":            8.25, "y":   4.5 },
+        { "label": "D", "row": 3, "col":  7, "x":            9.25, "y":   4.5 },
+        { "label": "F", "row": 3, "col":  8, "x":           10.25, "y":   4.5 },
+
+        { "label": "1", "row": 4, "col":  0, "x":               1, "y":   5.5 },
+        { "label": "2", "row": 4, "col":  1, "x":               2, "y":   5.5 },
+        { "label": "3", "row": 4, "col":  2, "x":               3, "y":   5.5 },
+        { "label": "SHIFT", "row": 4, "col":  3, "x":         5.5, "y":   5.5,"u": 2.25 },
+        { "label": "Z", "row": 4, "col":  4, "x":            7.75, "y":   5.5 },
+        { "label": "X", "row": 4, "col":  5, "x":            8.75, "y":   5.5 },
+        { "label": "C", "row": 4, "col":  6, "x":            9.75, "y":   5.5 },
+        { "label": "V", "row": 4, "col":  7, "x":           10.75, "y":   5.5 },
+        { "label": "B", "row": 4, "col":  8, "x":           11.75, "y":   5.5 },
+
+        { "label": "0", "row": 5, "col":  0, "x":               1, "y":   6.5,"u":    2 },
+        { "label": ".", "row": 5, "col":  2, "x":               3, "y":   6.5 },
+        { "label": "ENTER", "row": 5, "col":  3, "x":           5, "y":   5.5, "r":   90, "rx":    5, "ry":   5.5,  "u":   2 },
+        { "label": "CTRL", "row": 5, "col":  4, "x":          5.5, "y":   6.5,"u": 1.25 },
+        { "label": "WIN", "row": 5, "col":  5, "x":          6.75, "y":   6.5,"u": 1.25 },
+        { "label": "ALT", "row": 5, "col":  6, "x":             8, "y":   6.5,"u": 1.25 },
+        { "label": "SPACE", "row": 5, "col":  7, "x":        9.25, "y":   6.5,"u": 2.25 },
+        { "label": "G", "row": 5, "col":  8, "x":           11.25, "y":   4.5 },
+
+        { "label": "F6", "row": 6, "col":  9, "x":          14.75, "y":     1 },
+        { "label": "F7", "row": 6, "col":  10, "x":         15.75, "y":     1 },
+        { "label": "F8", "row": 6, "col":  11, "x":         16.75, "y":     1 },
+        { "label": "F9", "row": 6, "col":  12, "x":         18.25, "y":     1 },
+        { "label": "F10", "row": 6, "col":  13, "x":        19.25, "y":     1 },
+        { "label": "F11", "row": 6, "col":  14, "x":        20.25, "y":     1 },
+        { "label": "F12", "row": 6, "col":  15, "x":        21.25, "y":     1 },
+        { "label": "PGUP", "row": 6, "col":  16, "x":        22.5, "y":     1 },
+
+        { "label": "7", "row": 7, "col":  9, "x":           14.25, "y":   2.5 },
+        { "label": "8", "row": 7, "col":  10, "x":          15.25, "y":   2.5 },
+        { "label": "9", "row": 7, "col":  11, "x":          16.25, "y":   2.5 },
+        { "label": "0", "row": 7, "col":  12, "x":          17.25, "y":   2.5 },
+        { "label": "-", "row": 7, "col":  13, "x":          18.25, "y":   2.5 },
+        { "label": "=", "row": 7, "col":  14, "x":          19.25, "y":   2.5 },
+        { "label": "BACKSPACE", "row": 7, "col":  15, "x":  20.25, "y":   2.5,"u":    2 },
+        { "label": "PGDN", "row": 7, "col":  16, "x":        22.5, "y":     2 },
+
+        { "label": "Y", "row": 8, "col":  9, "x":           13.75, "y":   3.5 },
+        { "label": "U", "row": 8, "col":  10, "x":          14.75, "y":   3.5 },
+        { "label": "I", "row": 8, "col":  11, "x":          15.75, "y":   3.5 },
+        { "label": "O", "row": 8, "col":  12, "x":          16.75, "y":   3.5 },
+        { "label": "P", "row": 8, "col":  13, "x":          17.75, "y":   3.5 },
+        { "label": "[", "row": 8, "col":  14, "x":          18.75, "y":   3.5 },
+        { "label": "]", "row": 8, "col":  15, "x":          19.75, "y":   3.5 },
+        { "label": "|", "row": 8, "col":  16, "x":          20.75, "y":   3.5,"u":  1.5 },
+
+        { "label": "H", "row": 9, "col":  9, "x":              14, "y":   4.5 },
+        { "label": "J", "row": 9, "col":  10, "x":             15, "y":   4.5 },
+        { "label": "K", "row": 9, "col":  11, "x":             16, "y":   4.5 },
+        { "label": "L", "row": 9, "col":  12, "x":             17, "y":   4.5 },
+        { "label": ";", "row": 9, "col":  13, "x":             18, "y":   4.5 },
+        { "label": "'", "row": 9, "col":  14, "x":             19, "y":   4.5 },
+        { "label": "ENTER", "row": 9, "col":  15, "x":         20, "y":   4.5,"u": 2.25 },
+        { "label": "DEL", "row": 9, "col":  16, "x":         22.5, "y":     3 },
+
+        { "label": "B", "row": 10, "col":  9, "x":           13.5, "y":   5.5 },
+        { "label": "N", "row": 10, "col":  10, "x":          14.5, "y":   5.5 },
+        { "label": "M", "row": 10, "col":  11, "x":          15.5, "y":   5.5 },
+        { "label": ",", "row": 10, "col":  12, "x":          16.5, "y":   5.5 },
+        { "label": ".", "row": 10, "col":  13, "x":          17.5, "y":   5.5 },
+        { "label": "/", "row": 10, "col":  14, "x":          18.5, "y":   5.5 },
+        { "label": "SHIFT", "row": 10, "col":  15, "x":      19.5, "y":   5.5,"u": 1.75 },
+        { "label": "UP", "row": 10, "col":  16, "x":         21.5, "y":   5.5 },
+
+        { "label": "SPACE", "row": 11, "col":  10, "x":     13.75, "y":   6.5,"u": 2.75 },
+        { "label": "ALT", "row": 11, "col":  11, "x":        16.5, "y":   6.5,"u": 1.25 },
+        { "label": "FN", "row": 11, "col":  12, "x":        17.75, "y":   6.5,"u": 1.25 },
+        { "label": "CTRL", "row": 11, "col":  13, "x":         19, "y":   6.5,"u": 1.25 },
+        { "label": "LEFT", "row": 11, "col":  14, "x":       20.5, "y":   6.5 },
+        { "label": "DOWN", "row": 11, "col":  15, "x":       21.5, "y":   6.5 },
+        { "label": "RIGHT", "row": 11, "col":  16, "x":      22.5, "y":   6.5 }
+
+      ]
+    }
+  },
+  
+  "sensors": [
+    {
+      "ref": "left_encoder",
+      "name": "encoder_left",
+      "identifier": "encoder_left",
+      "compatible": "alps,ec11",
+      "label": "LEFT_ENCODER",
+      "enabled": true
+    }
+  ]
+
+}

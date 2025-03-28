@@ -1,0 +1,12 @@
+file_format: "1"
+id: noir
+name: noir
+type: shield
+url: https://github.com/kata0510/Lily58
+requires: [nrfmicro_13]
+features:
+  - keys
+  - encoder
+siblings:
+  - noir_left
+  - noir_right
