@@ -1,4 +1,4 @@
-# zmk-config-square68
+# keymap
 
 
-<img src="keymap-drawer/square68.svg" >
+<img src="keymap-drawer/cygnus.svg" >
