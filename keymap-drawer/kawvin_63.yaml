@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: kawvin_63}
 layers:
   Qwerty:
   - ESC
