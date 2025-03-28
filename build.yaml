@@ -5,27 +5,24 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-# board: [ "nrfmicro_13" ]
-# shield: [ "square68_left", "square68_right" ]
+# board: [ "nice_nano_v2" ]
+# shield: [ "noir88rgb_left", "noir88rgb_right" ]
 # include:
-#   - board: nrfmicro_13
-#     shield: square68_left
-#   - board: nrfmicro_13
-#     shield: square68_right
+#   - board: nice_nano_v2
+#     shield: noir88rgb_left
+#   - board: nice_nano_v2
+#     shield: noir88rgb_right
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-#     artifact-name: square68_left_with_logging
+#     artifact-name: noir88rgb_left_with_logging
 #
 ---
 include:
   - board: nice_nano_v2
-    shield: square68_left display_091_drum
+    shield: noir88rgb_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_leftwithdrum_studio
+    artifact-name: noir88rgb_left_studio
   - board: nice_nano_v2
-    shield: square68_right display_091_drum
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_rightwithdrum
+    shield: noir88rgb_right
   - board: nice_nano_v2
     shield: settings_reset
     

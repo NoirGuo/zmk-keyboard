@@ -1,0 +1,13 @@
+file_format: "1"
+id: noir88rgb
+name: noir88rgb
+type: shield
+url: https://github.com/NoirGuo/Noir88-keyboard
+requires: [nice_nano_v2]
+features:
+  - keys
+  - encoder
+  - underglow
+siblings:
+  - noir88rgb_left
+  - noir88rgb_right

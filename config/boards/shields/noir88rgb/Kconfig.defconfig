@@ -1,0 +1,24 @@
+
+if SHIELD_noir88rgb_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "noir88rgb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_noir88rgb_LEFT || SHIELD_noir88rgb_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+if ZMK_RGB_UNDERGLOW
+
+config WS2812_STRIP
+    default y
+endif
+
+endif
+
