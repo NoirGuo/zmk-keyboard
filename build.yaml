@@ -6,26 +6,24 @@
 # distinguish build outputs from each other:
 #
 # board: [ "nrfmicro_13" ]
-# shield: [ "square68_left", "square68_right" ]
+# shield: [ "noir65_left", "noir65_right" ]
 # include:
 #   - board: nrfmicro_13
-#     shield: square68_left
+#     shield: noir65_left
 #   - board: nrfmicro_13
-#     shield: square68_right
+#     shield: noir65_right
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-#     artifact-name: square68_left_with_logging
+#     artifact-name: noir65_left_with_logging
 #
 ---
 include:
   - board: nice_nano_v2
-    shield: square68_left display_091_drum
+    shield: noir65_left display_042
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_leftwithdrum_studio
+    artifact-name: noir65_leftwith042
   - board: nice_nano_v2
-    shield: square68_right display_091_drum
-    cmake-args: -DCONFIG_ZMK_DISPLAY=y
-    artifact-name: square68_rightwithdrum
+    shield: noir65_right
+    artifact-name: noir65_right
   - board: nice_nano_v2
     shield: settings_reset
     

@@ -1,0 +1,13 @@
+file_format: "1"
+id: noir65
+name: Noir65
+type: shield
+url: https://github.com/NoirGuo/zmk-noir65
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - noir65_left
+  - noir65_right
