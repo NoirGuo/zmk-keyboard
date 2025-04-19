@@ -74,7 +74,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layouts = &charybdis_layout；;
+        zmk,physical-layouts = &charybdis_layout;
 	zmk,underglow = &led_strip;
     };
 
