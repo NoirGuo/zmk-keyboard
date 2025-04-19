@@ -1,4 +1,1 @@
-# zmk-config-square68
-
-
-<img src="keymap-drawer/square68.svg" >
+zmk-config for charybdis (4x6)
