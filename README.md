@@ -1,1 +1,4 @@
-zmk-config for charybdis (4x6)
+# keymap
+
+
+<img src="keymap-drawer/charybdis.svg" >
