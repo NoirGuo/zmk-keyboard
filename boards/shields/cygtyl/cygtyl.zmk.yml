@@ -1,6 +1,6 @@
 file_format: "1"
-id: cygnus
-name: Cygnus
+id: cygtyl
+name: Cygtyl
 type: shield
 url: https://github.com/NoirGuo/zmk-cygnus
 requires: [nice_nano_v2]
@@ -9,5 +9,5 @@ features:
   - encoder
   - underglow
 siblings:
-  - cygnus_left
-  - cygnus_right
+  - cygtyl_left
+  - cygtyl_right

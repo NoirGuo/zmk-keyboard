@@ -1,6 +1,6 @@
 {
-  "id": "Cygnus",
-  "name": "Cygnus",
+  "id": "Cygtyl",
+  "name": "Cygtyl",
   "layouts": {
     "default_layout": {
       "name": "default_layout",
@@ -57,16 +57,16 @@
         { "label":         ",", "row": 3, "col": 10, "x":12.25, "y":3.5},
         { "label":         ".", "row": 3, "col": 11, "x":13.25, "y":3.5},
 
+        { "label":        "F1", "row": 4, "col":  1, "x": 5.0, "y": 5.5 },
+        { "label":        "F2", "row": 4, "col":  2, "x": 6.0, "y": 5.5 },
         { "label":        "F3", "row": 4, "col":  3, "x":4, "y":4.5},
         { "label":        "F4", "row": 4, "col":  4, "x":5, "y":4.5}, 
         { "label":        "F5", "row": 4, "col":  5, "x":6, "y":4.5},
         { "label":        "F6", "row": 4, "col":  6, "x":7.25, "y":4.5}, 
         { "label":        "F7", "row": 4, "col":  7, "x":8.25, "y":4.5},
         { "label":        "F8", "row": 4, "col":  8, "x":9.25, "y":4.5},
-        { "label":        "F9", "row": 4, "col":  9, "x":10.5, "y":6}, 
-        { "label":       "F10", "row": 4, "col": 10, "x":11.5, "y":7},
-        { "label":       "F11", "row": 4, "col": 11, "x":12.5, "y":6},
-        { "label":       "F12", "row": 4, "col": 12, "x":11.5, "y":5} 
+        { "label":        "F9", "row": 4, "col":  9, "x":7.25, "y": 5.5}, 
+        { "label":       "F10", "row": 4, "col": 10, "x":8.25, "y": 5.5}
 
       ]
     }

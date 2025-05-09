@@ -18,12 +18,12 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: cygnus_left
+    shield: cygtyl_left
     snippet: studio-rpc-usb-uart
-    artifact-name: cygnus_left_studio
+    artifact-name: cygtyl_left_studio
   - board: nice_nano_v2
-    shield: cygnus_right
-    artifact-name: cygnus_right
+    shield: cygtyl_right
+    artifact-name: cygtyl_right
   - board: nice_nano_v2
     shield: settings_reset
     

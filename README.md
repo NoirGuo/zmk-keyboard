@@ -1,4 +1,4 @@
 # keymap
 
 
-<img src="keymap-drawer/cygnus.svg" >
+<img src="keymap-drawer/cygtyl.svg" >
