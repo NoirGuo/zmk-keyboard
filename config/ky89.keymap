@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <input/processors.dtsi>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
 
 / {
@@ -38,6 +37,7 @@
 
         tap-ms = <30>;
     };
+};
 
 / {
     combos { compatible = "zmk,combos"; };
