@@ -64,7 +64,7 @@
         zephyr,display = &oled;
     };
 
-    kscan: kscan0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
 
