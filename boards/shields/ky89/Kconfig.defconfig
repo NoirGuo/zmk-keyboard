@@ -15,6 +15,15 @@ endif
 
 endif
 
+if SHIELD_KY89_PERIPHERAL_LEFT || SHIELD_KY89_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default n
+
+endif # END peripherals
+
 if SHIELD_KY89_DONGLE || SHIELD_KY89_PERIPHERAL_LEFT || SHIELD_KY89_RIGHT
 
 config ZMK_SPLIT
