@@ -9,7 +9,7 @@ features:
   - keys
   - display
   - encoder
-  - underglow
 siblings:
-  - ky89_left
+  - ky89_dongle
+  - ky89_lfetwithdrum
   - ky89_right

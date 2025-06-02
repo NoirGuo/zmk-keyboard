@@ -1,7 +1,7 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_KY89_LEFT
+if SHIELD_KY89_DONGLE
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -9,27 +9,16 @@ config ZMK_SPLIT_ROLE_CENTRAL
 if ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_KEYBOARD_NAME
-    default "Ky89"
+    default "Ky89-dongle"
 
 endif
 
 endif
 
-if SHIELD_KY89_LEFT || SHIELD_KY89_RIGHT
+if SHIELD_KY89_DONGLE || SHIELD_KY89_LEFTWITHDRUM || SHIELD_KY89_RIGHT
 
 config ZMK_SPLIT
     default y
-
-choice BT_CTLR_TX_PWR
-    default BT_CTLR_TX_PWR_PLUS_8
-endchoice
-
-config ZMK_RGB_UNDERGLOW
-    select WS2812_STRIP
-    select SPI
-endif
-
-if SHIELD_KY89_LEFT 
 
 if ZMK_DISPLAY
 
@@ -38,11 +27,6 @@ config SSD1306
 
 config I2C
     default y
-
-#choice ZMK_DISPLAY_WORK_QUEUE
-#    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
-#endchoice
-
 
 if LVGL
 
