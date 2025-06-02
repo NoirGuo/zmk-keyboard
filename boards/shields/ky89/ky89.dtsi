@@ -10,7 +10,7 @@
 / {
 
     chosen {
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layouts = &ky89_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -37,4 +37,14 @@ RC(5,7) RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4)                              RC(
     };
 
    
+};
+
+&ky89_layout{
+	transform = <&default_transform>;
+	kscan = <&kscan0>;
+};
+
+zephyr_udc0: &usbd { 
+    compatible = "nordic,nrf-usbd"; 
+    status = "okay"; 
 };
