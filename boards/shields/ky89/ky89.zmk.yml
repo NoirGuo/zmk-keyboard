@@ -11,5 +11,5 @@ features:
   - encoder
 siblings:
   - ky89_dongle
-  - ky89_lfetwithdrum
+  - ky89_peripheral_left
   - ky89_right
