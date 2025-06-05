@@ -75,7 +75,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layouts = &charybdis_layout;
-	zmk,underglow = &led_strip;
+	    zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
@@ -97,13 +97,13 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
 
-        diode-direction = "col2row";
+        diode-direction = "row2col";
 		row-gpios
-            = <&gpio0 31 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
-            , <&gpio1 15 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
-            , <&gpio0 24 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
-	        , <&gpio0 22 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
-	        , <&gpio1 6 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+            = <&gpio0 31 GPIO_ACTIVE_HIGH>
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>
+	        , <&gpio0 22 GPIO_ACTIVE_HIGH>
+	        , <&gpio1 6 GPIO_ACTIVE_HIGH>
             ;
     };
 
