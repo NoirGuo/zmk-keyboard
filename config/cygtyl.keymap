@@ -57,7 +57,7 @@
             >;
 
             display-name = "QWERT";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         layer_1 {
@@ -71,7 +71,7 @@
             >;
 
             display-name = "MOUSE";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_2 {
