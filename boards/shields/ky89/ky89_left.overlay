@@ -98,12 +98,12 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan;
+        zmk,kscan = &kscan0;
         zephyr,display = &oled;
         zmk,underglow = &led_strip;
     };
 
-    kscan: kscan {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
 
