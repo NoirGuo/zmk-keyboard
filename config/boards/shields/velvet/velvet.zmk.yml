@@ -8,6 +8,7 @@ requires:
 exposes:
 features:
   - keys
+  - underglow
 siblings:
   - velvet_left
   - velvet_right
