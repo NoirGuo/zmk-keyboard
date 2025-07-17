@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: velvet}
 layers:
   Qwery:
-  - {t: '`', h: '~', s: '~'}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -11,20 +11,20 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: Gui+Sft+V}
+  - P
   - {t: \, h: '|', s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: ':', s: ':'}
-  - {t: '''', h: '"', s: '"'}
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -33,157 +33,157 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
-  - {t: /, h: '?', s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '$$mdi:backspace-outline$$', h: Navi}
-  - {t: '$$mdi:keyboard-tab$$', h: Modify}
-  - {t: '$$mdi:keyboard-return$$', h: Modify}
-  - {t: '$$mdi:backspace-reverse$$', h: Mouse}
-  - {t: '0', s: )}
-  - {t: '1', s: '!'}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
-  Navi:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Home
-  - PgUp
-  - $$mdi:volume-plus$$
-  - $$mdi:brightness-5$$
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:volume-minus$$
-  - $$mdi:brightness-7$$
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - End
-  - PgDn
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Symbol:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - (
-  - {t: ▽, type: trans}
-  - Esc
-  - $$mdi:apple-keyboard-caps$$
-  - Home
-  - End
-  - _
-  - {t: '-', s: _}
-  - $$mdi:apple-keyboard-shift$$
-  - PgUp
-  - PgDn
-  - INSERT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '`', h: Navi, s: '~'}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '=', h: LGUI, s: +}
+  - {t: Esc, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-space$$', h: Number}
+  - {t: '$$mdi:keyboard-space$$', h: RGB}
   - {t: '$$mdi:backspace-outline$$', type: backspace}
+  - Number
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:backspace-reverse$$', h: Navi}
+  Number:
+  - {t: ▽, type: trans}
+  - {t: '!', h: '1'}
+  - {t: '@', h: '2'}
+  - {t: '#', h: '3'}
+  - {t: $, h: '4'}
+  - {t: '%', h: '5'}
+  - {t: ^, h: '6'}
+  - {t: '&', h: '7'}
+  - {t: '*', h: '8'}
+  - {t: (, h: '9'}
+  - {t: ), h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '~'
-  - {t: '`', s: '~'}
-  - {t: '=', h: +, s: +}
-  - {t: '''', h: '"', s: '"'}
-  - {t: \, h: '|', s: '|'}
-  - $$mdi:backspace-reverse$$
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held alternate}
-  Modify:
-  - {t: ▽, type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - '{'
-  - '}'
   - F1
   - F2
   - F3
   - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - PG DN
+  - {t: ▽, type: trans}
+  - {type: held alternate}
+  - {t: ▽, type: trans}
+  - PG UP
+  Navi:
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
+  - Home
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-up$$
+  - {t: ▽, type: trans}
+  - {t: '[', h: '{', s: '{'}
+  - {t: ']', h: '}', s: '}'}
+  - {t: ▽, type: trans}
+  - $$mdi:bluetooth-off$$
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - End
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-left$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held alternate}
+  RGB:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - RGB EFF
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - RGB EFR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -231,7 +231,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -276,7 +276,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
