@@ -51,6 +51,10 @@
     };
 };
 
+	chosen {
+		zmk,underglow = &led_strip;
+	};
+
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
     row-gpios
