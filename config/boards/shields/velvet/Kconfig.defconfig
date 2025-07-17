@@ -1,16 +1,6 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_VELVET_CENTRAL_DONGLE
-
-config ZMK_KEYBOARD_NAME
-    default "Velvet"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
 if SHIELD_VELVET_CENTRAL_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -49,17 +39,6 @@ config LV_Z_BITS_PER_PIXEL
 choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
-
-endif
-
-if SHIELD_VELVET_CENTRAL_DONGLE || SHIELD_VELVET_PERIPHERAL_LEFT || SHIELD_VELVET_PERIPHERAL_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_RGB_UNDERGLOW
-    select WS2812_STRIP
-    select SPI
 
 endif
 
