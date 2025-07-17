@@ -51,6 +51,7 @@
     };
 };
 
+/ {
 	chosen {
 		zmk,underglow = &led_strip;
 	};
@@ -71,4 +72,5 @@
     , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     ;
+    };
 };

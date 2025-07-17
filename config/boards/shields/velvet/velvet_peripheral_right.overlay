@@ -55,6 +55,7 @@
 	col-offset = <6>;
 };
 
+/ {
 	chosen {
 		zmk,underglow = &led_strip;
 	};
@@ -75,4 +76,5 @@
     , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     ;
+    };
 };
