@@ -37,16 +37,16 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '`', h: Navi, s: '~'}
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '=', h: LGUI, s: +}
   - {t: Esc, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: RGB}
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - Number
-  - {t: '''', s: '"'}
+  - {t: '`', h: Navi, s: '~'}
   - {t: '$$mdi:backspace-reverse$$', h: Navi}
+  - {t: '$$mdi:keyboard-space$$', h: Number}
+  - {t: '$$mdi:backspace-outline$$', type: backspace}
+  - {t: Esc, h: RGB}
+  - {t: '''', s: '"'}
   Number:
   - {t: ▽, type: trans}
   - {t: '!', h: '1'}
@@ -87,13 +87,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - PG DN
-  - {t: ▽, type: trans}
-  - {type: held alternate}
   - {t: ▽, type: trans}
   - PG UP
+  - {t: PG DN, type: held alternate}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Navi:
   - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -131,16 +131,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   RGB:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,15 +178,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - RGB TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
@@ -272,16 +272,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
 combos:
 - p: [3, 4]
   k: {t: '[', s: '{'}
