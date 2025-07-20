@@ -191,10 +191,10 @@
 
         Qwery {
             bindings = <
-&kp TAB         &kp Q        &kp W            &kp E           &kp R         &kp T        &kp Y        &kp U          &kp I      &kp O    &kp P      &as PIPE BACKSLASH
-&kp CAPSLOCK    &kp A        &kp S            &kp D           &kp F         &kp G        &kp H        &kp J          &kp K      &kp L    &kp SEMI   &kp ENTER
-&kp LEFT_SHIFT  &kp Z        &kp X            &kp C           &kp V         &kp B        &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                &lt 2 GRAVE  &mt LCTRL MINUS  &mt LGUI EQUAL  &mt LALT ESC  &lt 1 SPACE  &lt 3 SPACE  &kp BACKSPACE  &mo 1      &kp SQT  &lt 2 DEL
+&kp TAB         &kp Q            &kp W           &kp E         &kp R        &kp T        &kp Y      &kp U        &kp I          &kp O      &kp P     &as PIPE BACKSLASH
+&kp CAPSLOCK    &kp A            &kp S           &kp D         &kp F        &kp G        &kp H      &kp J        &kp K          &kp L      &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z            &kp X           &kp C         &kp V        &kp B        &kp N      &kp M        &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
+                &mt LCTRL MINUS  &mt LGUI EQUAL  &mt LALT ESC  &lt 1 SPACE  &lt 2 GRAVE  &lt 2 DEL  &lt 1 SPACE  &kp BACKSPACE  &lt 3 ESC  &kp SQT
             >;
 
             label = "Qwery";
@@ -205,7 +205,7 @@
 &trans  &as N1 EXCL  &as N2 AT  &as N3 HASH  &as N4 DLLR  &as N5 PRCNT  &as N6 CARET  &as N7 AMPS  &as N8 STAR  &as N9 LPAR  &as N0 RPAR  &trans
 &trans  &kp F1       &kp F2     &kp F3       &kp F4       &kp F5        &kp F6        &kp F7       &kp F8       &kp F9       &kp F10      &kp F11
 &trans  &trans       &trans     &trans       &trans       &trans        &trans        &trans       &trans       &trans       &trans       &kp F12
-        &trans       &trans     &trans       &trans       &trans        &kp PG_DN     &trans       &trans       &trans       &kp PG_UP
+        &trans       &trans     &trans       &trans       &trans        &kp PG_UP     &kp PG_DN    &trans       &trans       &trans
             >;
 
             label = "Number";
@@ -227,7 +227,7 @@
 &trans  &trans           &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans  &trans  &trans  &trans  &trans  &trans
-        &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans
+        &trans           &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "RGB";
