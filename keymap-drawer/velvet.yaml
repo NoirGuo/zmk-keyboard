@@ -66,11 +66,11 @@ layers:
   - {t: Sft+6, s: Sft+^}
   - {t: Sft+;, s: 'Sft+:'}
   - Sft+"
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - RGB EFF
   - {type: none}
   - $$mdi:apple-keyboard-command$$
   - {type: none}
@@ -78,18 +78,18 @@ layers:
   - {t: ;, s: ':'}
   - Sft+?
   - {t: Sft+1, s: Sft+!}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - RGB EFR
   - {type: none}
   - {type: none}
   - {type: none}
   - '3'
   - {type: held}
   - {t: ▽, type: trans}
-  - {type: none}
+  - RGB TOG
   - {type: none}
   - {t: ▽, type: trans}
   - {type: none}
