@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: velvet}
 layers:
-  Qwery:
-  - $$mdi:keyboard-tab$$
+  default:
+  - Esc
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, h: '|', s: '|'}
+  - {t: '$$mdi:backspace-outline$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -23,9 +23,9 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:arrow-up$$
+  - {t: \, s: '|'}
+  - Sft+$$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -35,273 +35,367 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-right$$
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-control$$
+  - lower
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - raise
   - $$mdi:apple-keyboard-shift$$
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
-  - {t: '=', h: LGUI, s: +}
-  - {t: Esc, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '`', h: Navi, s: '~'}
-  - {t: '$$mdi:backspace-reverse$$', h: Navi}
-  - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - {t: Esc, h: RGB}
-  - {t: '''', s: '"'}
-  Number:
+  - {type: none}
+  - {type: none}
+  lower:
+  - '~'
+  - {t: Sft+1, s: Sft+!}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
+  - BT CLR ALL
+  - $$mdi:keyboard-tab$$
+  - {t: 'Sft+[', s: 'Sft+{'}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+;, s: 'Sft+:'}
+  - Sft+"
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {t: Sft+9, s: Sft+(}
+  - {t: ;, s: ':'}
+  - Sft+?
+  - {t: Sft+1, s: Sft+!}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '3'
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: '!', h: '1'}
-  - {t: '@', h: '2'}
-  - {t: '#', h: '3'}
-  - {t: $, h: '4'}
-  - {t: '%', h: '5'}
-  - {t: ^, h: '6'}
-  - {t: '&', h: '7'}
-  - {t: '*', h: '8'}
-  - {t: (, h: '9'}
-  - {t: ), h: '0'}
+  - {type: none}
+  - {type: none}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  raise:
   - F1
   - F2
   - F3
   - F4
   - F5
   - F6
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+7, s: Sft+&}
+  - Sft+*
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+0, s: Sft+)}
+  - $$mdi:backspace-reverse$$
   - F7
   - F8
   - F9
   - F10
   - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - PG UP
-  - {t: PG DN, type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Navi:
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - Home
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
-  - {t: '[', h: '{', s: '{'}
-  - {t: ']', h: '}', s: '}'}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - BT CLR ALL
+  - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: Sft+-, s: Sft+_}
+  - {t: Sft+=, s: Sft++}
+  - PgDn
   - End
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-left$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  RGB:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RGB HUI
-  - RGB SAI
-  - RGB BRI
-  - RGB SPI
-  - RGB EFF
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RGB HUD
-  - RGB SAD
-  - RGB BRD
-  - RGB SPD
-  - RGB EFR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RGB TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '4'
+  - {type: none}
+  - {type: none}
+  '3':
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - +
+  - KP SUBTRACT
+  - '7'
+  - '8'
+  - '9'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '*'
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '0'
+  - .
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: held}
-  - {t: ▽, type: trans}
-  Mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_DOWN'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Flash:
-  - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: default, h: to, type: held}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  '4':
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: default, h: to}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  '5':
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  '6':
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  '7':
+  - {type: none}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
   - {t: '$$mdi:bluetooth-connect$$', h: '2'}
   - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   - {t: '$$mdi:bluetooth-connect$$', h: '5'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - $$mdi:volume-plus$$
-  - $$mdi:brightness-5$$
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-left$$'}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:volume-minus$$
-  - $$mdi:brightness-4$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: default, h: to}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
 combos:
-- p: [3, 4]
-  k: {t: '[', s: '{'}
-- p: [7, 8]
-  k: {t: ']', s: '}'}
+- p: [4, 5]
+  k: {t: '1', s: '!'}
 - p: [15, 16]
-  k: (
-- p: [19, 20]
-  k: )
+  k: {t: '2', s: '@'}
+- p: [16, 17]
+  k: {t: '3', s: '#'}
 - p: [27, 28]
-  k: '{'
-- p: [32, 33]
-  k: '}'
-- p: [5, 6]
-  k: {t: \, s: '|'}
-- p: [17, 18]
-  k: '|'
-- p: [0, 1]
-  k: Esc
-- p: [6, 7]
-  k: +
+  k: {t: '4', s: $}
+- p: [28, 29]
+  k: {t: '5', s: '%'}
 - p: [18, 19]
-  k: '='
+  k: {t: '6', s: ^}
+- p: [19, 20]
+  k: {t: '7', s: '&'}
+- p: [20, 21]
+  k: {t: '8', s: '*'}
+- p: [30, 31]
+  k: {t: '9', s: (}
+- p: [31, 32]
+  k: {t: '0', s: )}
+- p: [35, 34]
+  k: $$mdi:arrow-down$$
