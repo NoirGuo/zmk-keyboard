@@ -23,26 +23,19 @@
 	};
 
     kscan0: kscan {
-        wakeup-source;
+        compatible = "zmk,kscan-gpio-matrix";
+	wakeup-source;
         diode-direction = "row2col";
     };
 
 };
 
 &velvet_layout{
-
 	transform = <&default_transform>;
-
 	kscan = <&kscan0>;
-
 };
 
-
-
 zephyr_udc0: &usbd { 
-
     compatible = "nordic,nrf-usbd"; 
-
     status = "okay"; 
-
 };
