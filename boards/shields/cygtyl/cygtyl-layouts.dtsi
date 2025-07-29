@@ -1,9 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    cygtyl_layout0: cygtyl_layout_0 {
+    cygtyl_layout: cygtyl_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT";
+        display-name = "Cygtyl";
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
