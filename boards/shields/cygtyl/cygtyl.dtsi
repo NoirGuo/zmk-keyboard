@@ -11,6 +11,7 @@
 / {
     chosen {
         zmk,physical-layouts = &cygtyl_layout;
+        zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
