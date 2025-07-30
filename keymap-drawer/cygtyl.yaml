@@ -51,9 +51,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-option$$', s: +}
-  - {t: '`', h: CONTROL, s: '~'}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: CONTROL}
   - PG DN
   - {t: '$$mdi:backspace-reverse-outline$$', h: MOUSE}
   - PG UP
@@ -179,9 +179,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: RGB TOG, type: held}
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
