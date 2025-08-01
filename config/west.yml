@@ -18,4 +18,4 @@ manifest:
       remote: englmaxi
       revision: main
   self:
-    path: boards
+    path: config
