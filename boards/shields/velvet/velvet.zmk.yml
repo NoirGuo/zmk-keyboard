@@ -5,7 +5,6 @@ type: shield
 url:
 requires:
   - nice_nano_v2
-exposes:
 features:
   - keys
   - underglow
