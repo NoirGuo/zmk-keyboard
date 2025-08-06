@@ -55,8 +55,17 @@
 	col-offset = <6>;
 };
 
-&kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,underglow = &led_strip;
+    };
+    
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "row2col";
+        wakeup-source;
+
     row-gpios
 	= <&gpio1 11 GPIO_ACTIVE_HIGH>
 	, <&gpio0 10 GPIO_ACTIVE_HIGH>
@@ -71,4 +80,5 @@
     , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     ;
+    };
 };

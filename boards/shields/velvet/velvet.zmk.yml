@@ -4,11 +4,13 @@ name: Velvet
 type: shield
 url:
 requires:
-  - pro_micro
+  - nice_nano_v2
 exposes:
 features:
   - keys
   - underglow
+  - display
 siblings:
-  - velvet_left
-  - velvet_right
+  - velvet_dongle
+  - velvet_ph_left
+  - velvet_ph_right

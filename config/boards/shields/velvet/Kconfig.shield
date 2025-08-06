@@ -1,8 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_VELVET_CENTRAL_LEFT
-    def_bool $(shields_list_contains,velvet_central_left)    
-
-config SHIELD_VELVET_PERIPHERAL_RIGHT
-    def_bool $(shields_list_contains,velvet_peripheral_right)
