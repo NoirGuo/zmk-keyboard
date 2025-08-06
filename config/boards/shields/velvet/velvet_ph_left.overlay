@@ -57,7 +57,7 @@
         zmk,underglow = &led_strip;
     };
 
-    &kscan0: kscan {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
         wakeup-source;    
