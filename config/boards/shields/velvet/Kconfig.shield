@@ -7,5 +7,5 @@ config SHIELD_VELVET_DONGLE
 config SHIELD_VELVET_PH_LEFT
     def_bool $(shields_list_contains,velvet_ph_left)    
 
-config SHIELD_VELVET_PH_RIGHT
-    def_bool $(shields_list_contains,velvet_ph_right)
+config SHIELD_VELVET_RIGHT
+    def_bool $(shields_list_contains,velvet_right)
