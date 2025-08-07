@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: sh1106
-      url-base: https://github.com/NoirGuo
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
@@ -11,10 +9,6 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: sh1106_oled
-      remote: sh1106
-      revision: main 
-      path: drivers/sh1106
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main

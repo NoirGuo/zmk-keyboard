@@ -5,7 +5,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 if ZMK_DISPLAY
 
-config SSD1306
+config SH1106
     default y
 
 config I2C
