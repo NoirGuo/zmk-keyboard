@@ -1,3 +1,4 @@
+source "${ZEPHYR_EXTRA_MODULES}/sh1106_oled/Kconfig"
 
 if SHIELD_CYGTYL_DONGLE
 
