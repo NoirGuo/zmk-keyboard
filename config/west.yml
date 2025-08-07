@@ -14,7 +14,7 @@ manifest:
     - name: sh1106_oled
       remote: sh1106
       revision: main 
-      path: modules/drivers/sh1106
+      path: drivers/sh1106
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
