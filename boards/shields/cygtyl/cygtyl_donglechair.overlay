@@ -55,7 +55,7 @@
         width = <128>;
         height = <64>;
         segment-offset = <2>;
-        multiplex-ratio = <63>;
+        multiplex-ratio = <60>;
         page-offset = <0>;
         display-offset = <0>;
         segment-remap;
