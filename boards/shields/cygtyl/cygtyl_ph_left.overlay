@@ -54,7 +54,6 @@
 /{
     chosen {
         zmk,kscan = &kscan0;
-        zephyr,display = &oled;
     };
 
 
