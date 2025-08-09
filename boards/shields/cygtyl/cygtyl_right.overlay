@@ -55,6 +55,12 @@
     col-offset = <6>;
 };
 
+/{
+    chosen {
+        zmk,kscan = &kscan0;
+        zephyr,display = &oled;
+    };
+
 kscan0: kscan {
     col-gpios
         = <&gpio0 8 GPIO_ACTIVE_HIGH>
@@ -64,7 +70,7 @@ kscan0: kscan {
         , <&gpio0 17 GPIO_ACTIVE_HIGH>
         , <&gpio0 20 GPIO_ACTIVE_HIGH>
         ;
-
+    };
 };
 
 

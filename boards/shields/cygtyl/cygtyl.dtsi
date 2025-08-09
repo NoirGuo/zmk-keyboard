@@ -12,7 +12,6 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
         zmk,physical-layouts = &cygtyl_layout0;
         zmk,underglow = &led_strip;
     };

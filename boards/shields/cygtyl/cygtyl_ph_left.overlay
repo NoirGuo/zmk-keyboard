@@ -51,6 +51,12 @@
     };
 };
 
+/{
+    chosen {
+        zmk,kscan = &kscan0;
+        zephyr,display = &oled;
+    };
+
 kscan0: kscan {
     col-gpios
         = <&gpio0 8 GPIO_ACTIVE_HIGH>
@@ -85,5 +91,5 @@ kscan0: kscan {
         //sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
     };
-
+    };
 };
