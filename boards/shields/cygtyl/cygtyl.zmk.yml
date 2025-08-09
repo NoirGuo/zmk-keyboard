@@ -8,6 +8,8 @@ features:
   - keys
   - encoder
   - underglow
+  - display
 siblings:
-  - cygtyl_left
+  - cygtyl_donglechair
+  - cygtyl_ph_left
   - cygtyl_right
