@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: LWIN}
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
@@ -51,12 +51,12 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-option$$', s: +}
-  - {t: '`', h: CONTROL, s: '~'}
-  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - PG DN
+  - {t: '`', s: '~'}
+  - {t: LGUI, h: MOUSE}
+  - {t: '$$mdi:backspace$$', h: CONTROL}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: MOUSE}
-  - PG UP
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-space$$
   - {t: '''', h: CONTROL, s: '"'}
   - $$mdi:arrow-left-bold$$
@@ -83,11 +83,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -118,10 +118,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - '&mkp MB3'
-  - END
-  - {type: held alternate}
-  - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
+  - {t: '&mkp MB2', type: held alternate}
+  - PG UP
+  - '&mkp MB1'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -150,8 +150,8 @@ layers:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Sft+[', s: 'Sft+{'}
-  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB BRI
   - RGB SPI
@@ -179,9 +179,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: RGB TOG, type: held}
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
