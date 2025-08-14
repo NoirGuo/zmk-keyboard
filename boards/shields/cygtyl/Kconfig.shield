@@ -1,8 +1,8 @@
 # Copyright (c) 2025 Noir Guo
 # SPDX-License-Identifier: MIT
 
-config SHIELD_CYGTYL_DONGLECHAIR
-    def_bool $(shields_list_contains,cygtyl_donglechair)
+config SHIELD_CYGTYL_DONGLE
+    def_bool $(shields_list_contains,cygtyl_dongle)
 
 config SHIELD_CYGTYL_PH_LEFT
     def_bool $(shields_list_contains,cygtyl_ph_left)

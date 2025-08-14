@@ -10,6 +10,6 @@ features:
   - underglow
   - display
 siblings:
-  - cygtyl_donglechair
+  - cygtyl_dongle
   - cygtyl_ph_left
   - cygtyl_right
