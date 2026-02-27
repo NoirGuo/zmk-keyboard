@@ -14,8 +14,4 @@ if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
 config ZMK_SPLIT
     default y
 
-config ZMK_RGB_UNDERGLOW
-    select WS2812_STRIP
-    select SPI
-
 endif

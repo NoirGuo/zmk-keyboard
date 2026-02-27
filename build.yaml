@@ -17,13 +17,13 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro/nrf52840/zmk
     shield: cygnus_left
     snippet: studio-rpc-usb-uart
     artifact-name: cygnus_left_studio
-  - board: nice_nano_v2
+  - board: nrfmicro/nrf52840/zmk
     shield: cygnus_right
     artifact-name: cygnus_right
-  - board: nice_nano_v2
+  - board: nrfmicro/nrf52840/zmk
     shield: settings_reset
     

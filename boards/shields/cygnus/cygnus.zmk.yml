@@ -3,11 +3,10 @@ id: cygnus
 name: Cygnus
 type: shield
 url: https://github.com/NoirGuo/zmk-cygnus
-requires: [nice_nano_v2]
+requires: [nrfmicro]
 features:
   - keys
-  - encoder
-  - underglow
+
 siblings:
   - cygnus_left
   - cygnus_right
