@@ -1,4 +1,4 @@
 # keymap
 
 
-<img src="keymap-drawer/charybdis.svg" >
+<img src="keymap-drawer/eyelash40.svg" >
