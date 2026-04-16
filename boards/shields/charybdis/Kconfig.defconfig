@@ -1,17 +1,6 @@
-if SHIELD_CHARYBDIS_RIGHT
+if SHIELD_EYELASH40
 
 config ZMK_KEYBOARD_NAME
-	default "Charybdis"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+	default "Eyelash40"
 
 endif
-
-if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
-
-config ZMK_SPLIT
-	default y
-
-endif
-
