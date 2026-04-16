@@ -1,6 +1,6 @@
 file_format: "1"
 id: eyelash40
-name: eyelash40
+name: Eyelash40
 type: shield
 url: https://github.com/NoirGuo/zmk-keyboard/
 requires: [nice_nano]
