@@ -3,6 +3,7 @@ id: eyelash40
 name: eyelash40
 type: shield
 url: https://github.com/NoirGuo/zmk-keyboard/
+requires: [nice_nano]
 features:
   - keys
 siblings:
