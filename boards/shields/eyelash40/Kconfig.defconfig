@@ -1,6 +1,6 @@
 if SHIELD_EYELASH40
 
 config ZMK_KEYBOARD_NAME
-	default "Eyelash40"
+	default "eyelash40"
 
 endif
