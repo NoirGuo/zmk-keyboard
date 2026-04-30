@@ -3,92 +3,20 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write  # allow workflow to commit to the repo
+    with:
+      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+      output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
+      parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
 
-# name: Build
-
-# jobs:
-#   matrix:
-#     runs-on: ubuntu-latest
-#     name: Fetch Build Keyboards
-#     outputs:
-#       matrix: ${{ steps.set-matrix.outputs.matrix }}
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v2
-#       - name: Install yaml2json
-#         run: python3 -m pip install remarshal
-#       - id: set-matrix
-#         name: Fetch Build Matrix
-#         run: |
-#           matrix=$(yaml2json build.yaml | jq -c .)
-#           yaml2json build.yaml
-#           echo "::set-output name=matrix::${matrix}"
-#   build:
-#     runs-on: ubuntu-latest
-#     container:
-#       image: zmkfirmware/zmk-build-arm:stable
-#     needs: matrix
-#     name: Build
-#     strategy:
-#       fail-fast: false
-#       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
-#     steps:
-#       - name: Prepare variables
-#         id: variables
-#         run: |
-#           if [ -n "${{ matrix.shield }}" ]; then
-#             EXTRA_CMAKE_ARGS="-DSHIELD=${{ matrix.shield }}"
-#             ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
-#             DISPLAY_NAME="${{ matrix.shield }} - ${{ matrix.board }}"
-#           else
-#             EXTRA_CMAKE_ARGS=
-#             DISPLAY_NAME="${{ matrix.board }}"
-#             ARTIFACT_NAME="${{ matrix.board }}-zmk"
-#           fi
-#           echo ::set-output name=extra-cmake-args::${EXTRA_CMAKE_ARGS}
-#           echo ::set-output name=artifact-name::${ARTIFACT_NAME}
-#           echo ::set-output name=display-name::${DISPLAY_NAME}
-#       - name: Checkout
-#         uses: actions/checkout@v2
-#       - name: Cache west modules
-#         uses: actions/cache@v2
-#         env:
-#           cache-name: cache-zephyr-modules
-#         with:
-#           path: |
-#             modules/
-#             tools/
-#             zephyr/
-#             bootloader/
-#             zmk/
-#           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
-#           restore-keys: |
-#             ${{ runner.os }}-build-${{ env.cache-name }}-
-#             ${{ runner.os }}-build-
-#             ${{ runner.os }}-
-#       - name: West Init
-#         run: west init -l config
-#       - name: West Update
-#         run: west update
-#       - name: West Zephyr export
-#         run: west zephyr-export
-#       - name: West Build (${{ steps.variables.outputs.display-name }})
-#         run: |
-#           west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }}
-#       - name: ${{ steps.variables.outputs.display-name }} Kconfig file
-#         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
-#       - name: Rename artifacts
-#         run: |
-#           mkdir build/artifacts
-#           if [ -f build/zephyr/zmk.uf2 ]
-#           then
-#             cp build/zephyr/zmk.uf2 "build/artifacts/${{ steps.variables.outputs.artifact-name }}.uf2"
-#           elif [ -f build/zephyr/zmk.hex ]
-#           then
-#             cp build/zephyr/zmk.hex "build/artifacts/${{ steps.variables.outputs.artifact-name }}.hex"
-#           fi
-#       - name: Archive (${{ steps.variables.outputs.display-name }})
-#         uses: actions/upload-artifact@v2
-#         with:
-#           name: firmware
-#           path: build/artifacts
+      # 以下新添加
+      commit_message: "[Draw] ${{ github.event.head_commit.message }}"  
+      amend_commit: false
+      # install_branch: "main"
+      json_path: "config"
+      destination: "both"
